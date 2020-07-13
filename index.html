@@ -1,75 +1,53 @@
-<!-- 1. Enter ! to load boilerplate HTML -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <title>PizzaChez</title>
-
+    <meta name="description" content="my first restaurant website">
 </head>
+
 <body>
-    <h1 id="h1Id">Hello</h1>
-    <h2 id="h2Id">Welcome</h2>
-
-    <form id="formId">
-        <input  type="button" value="Order Here"  id="buttonId"  onclick="openOrderHere()">
-    </form>
-    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-homemade-pizza-horizontal-1542312378.png?crop=1.00xw:1.00xh;0,0&resize=980:*" alt="image">
-
-    <div id="id_of_div1">Available sizes:</div>
-    <div id="id_of_div2">Our today Toppings are:</div>
-    <div id="id_of_div3">Our today Crusts are:</div>
-    
-   
+    <div class="container">
 
 
-<div class="main">
-    <form>
-    <div id="id_of_div">Please select your toppings:
-        <input type="checkbox" id="id_of_checkbox1" class="items" name="top1" value="Chicken">
-        <label for="top1">chicken</label>
-        <input type="checkbox" id="id_of_checkbox2" class="items" name="top2" value="onion">
-        <label for="top2">onion</label>
-        <input type="checkbox" id="id_of_checkbox3" class="items" name="top3" value="spinach">
-        <label for="top3">spinach</label>
-        <input type="checkbox" id="id_of_checkbox4" class="items" name="top4" value="Extra cheese">
-        <label for="top4">extra cheese</label>
-        <input type="checkbox" id="id_of_checkbox5" class="items" name="top5" value="red pepper">
-        <label for="top5">red pepper</label>
-    </div>
-    <div id="id_of_div">Please select your curst:
-        <input type="radio" id="id_of_radio1" class="items" name="top6" value="thin">
-        <label for="top1">thin</label>
-        <input type="radio" id="id_of_radio2" class="items" name="top6" value="thick">
-        <label for="top2">thick</label>
-        <input type="radio" id="id_of_radio3" class="items" name="top6" value="brooklyn">
-        <label for="top3">brooklyn</label>
-    </div>
+<header>
+<img src="image/logo.png" alt="logo of my restaurant">
+</header>
 
-    <div id="id_of_div">Please select size:
-        <input type="radio" id="id_of_radio4" class="items" name="top6" value="thin">
-        <label for="top1">small</label>
-        <input type="radio" id="id_of_radio5" class="items" name="top6" value="thick">
-        <label for="top2">medium</label>
-        <input type="radio" id="id_of_radio6" class="items" name="top6" value="brooklyn">
-        <label for="top3">large</label>
-    </div>
-</form>
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="orderHere.html" onclick="openOrderHere()">ORDER ONLINE</a>
+    <a href="https://en.wikipedia.org/wiki/Pizza">ABOUT PIZZA</a>
+    <a href="available.html">TOPPINGS</a>
+    <a href="mailto:asma@mypizzaplace.com?Subject=mypizzaplace" target="_blank">CONTACT</a>
+</nav>
+
+
+ <main>
+<h1 id="h1_Id">welcome</h1>
+ <p id="p1_Id">topping_list</p>
+<a href="orderHere.html" target="_blank" onclick="openOrderHere()">ORDER HERE</a>
+</main>
+
+<section class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1558.3154225832316!2d-90.25157044183696!3d38.634372694903035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b5f7946d1461%3A0x3bb755bc2714b488!2s4220%20Duncan%20Ave%2C%20St.%20Louis%2C%20MO%2063110!5e0!3m2!1sen!2sus!4v1594447295881!5m2!1sen!2sus" width="1024" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+ </section>
+
+ <footer>
+            <p>Main St, Saint Louis, Mo - Copyright2020</p>
+            <!-- to create direct email page -->
+            <a href="mailto:asma@mypizzaplace.com?Subject=mypizzaplace" target="_blank">Email me</a>
+
+</footer>
+
 </div>
-    <input type="button" onclick='printChecked()' value="Submit your order"/>
-    <div id="id_of_div4">
-        <a href="https://google.com">Contact us</a>
-        <a href="https://google.com">About us</a>
-    
-    </div>
-    <div id="id_of_div9">:</div>
-    <h1 id="h3Id">...coming...</h1>
-    <input type="button" onclick='ready()' value="check status"/>
-    <h2 id="h4Id">Welcome</h2>
-
 </body>
-<script src="test.js"></script>
+
+<script src="index.js"></script>
 
 </html>
 
@@ -80,4 +58,3 @@
     - At least one image
     - At least two links -->
 <!-- HTML Elements (MDN): https://developer.mozilla.org/en-US/docs/Web/HTML/Element -->
-
